@@ -5,6 +5,6 @@ This project consists of two parts: An investigation of the BMP280 component and
 
 In part 1, the core sensing principle, the wiring scheme, and some important characteristics of the BMP280 are determined from the datasheet and other sources. A testing regimen is determined for each characteristic. A document with this information is included in this repository.
 
-I selected Range, Linearity, Sensitivity, Resolution, Accuracy, and Drift for testing via pressure chamber: a peanut butter jar with a bike tire stem and wiring through the lid, sealed by silicone RTV adhesive and plumber's tape. A bike pump is used to add pressure to the system. to test for temperature, an ice bath was used to cool the sensor (inside of the pressure chamber), and a hair dryer was used to heat the sensor (again inside the pressure chamber).
+I selected Range, Linearity, Sensitivity, Resolution, Accuracy, and Drift for testing via pressure chamber: a peanut butter jar with a bike tire stem and wiring through the lid, sealed by silicone RTV adhesive and plumber's tape. A bike pump is used to add pressure to the system. To test for temperature, an ice bath was used to cool the sensor (inside of the pressure chamber), and a hair dryer was used to heat the sensor (again inside the pressure chamber).
 
 In part 2, the tests were performed, and the data was analyzed and compared the the datasheet. The results were presented in a Powerpoint slideshow, which is included in this repository.
