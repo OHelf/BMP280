@@ -1,0 +1,12 @@
+The analysis of the data shows that the BMP280 is a good entry-level weather-monitoring sensor; useful but low-quality.
+
+It is good for sensing:
+- Pressure, as it is fairly linear but has a noticeable drift.
+- Temperature, as it is linear and has minimal drift but can be inaccurate.
+- Altitude, but only for relative changes in height because of the error introduced by pressure and temperature.
+
+Its range is commendable, it can be cooled far below the temperatures it would encounter in everyday use (-40 deg. C) and withstand pressures (300 hPa - 1100 hPa) the same way. It is decently linear, too.
+
+While it was impossible for me to test the temperature and altitude resolution, due to experimental constraints for the former and noise for the latter, the pressure resolution (0.04 hPa) was surprisingly high even though it was not close to the data sheet's given value (0.0016 hPa).
+
+The error in the BMP chip is its downfall; with pressure max error being 3.56%, temperature max error being 13.59%, and altitude max error being 3.27%. I suspect the altitude error might be higher than reported, because the DPS chip used as ground truth shares the BMP's drawback of deriving altitude from pressure and temperature, so the errors add up. Since both chips do this, that part of the error partially cancels out.
